@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+redis
+opencv-python-headless
+numpy
+torch
+torchvision
+torchaudio
+psycopg2-binary
+scikit-learn
+# label-studio-sdk # If programmatic interaction with LabelStudio is needed
+# sqlalchemy # Optional ORM, consider adding if complex DB interactions are planned
+# stripe # For Stripe API integration 
