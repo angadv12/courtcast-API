@@ -16,7 +16,7 @@ Coaches, trainers, media editors, gambling startups, and even rec-league apps al
 To build a computer-vision pipeline that converts raw basketball video into event-level JSON and embeddable shot charts. Target metrics include:
 *   93% shot-detection F1
 *   14 cm median location error
-*   Processing 60 games/hour on a single RTX 4090
+*   Processing 60 games/hour on a single RTX 3080
 
 This project aims to onboard beta customers and generate MRR, demonstrating a marketable product.
 
