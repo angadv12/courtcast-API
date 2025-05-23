@@ -5,3 +5,5 @@ __pycache__/
 
 # directory for game videos
 game-vids/
+
+.DS_Store
