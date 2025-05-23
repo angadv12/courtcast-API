@@ -6,11 +6,6 @@ CourtCast API turns any basketball video into structured, query-ready stats & vi
 
 Coaches, trainers, media editors, gambling startups, and even rec-league apps all want structured events (shot attempted, who, where, outcome, clock). Heat-maps are a nice by-product, but the real money is in a generic "video → JSON" pipe they can drop into their own dashboards.
 
-### Brutal clarity on why this sells:
-*   It removes a hated chore (manual tagging) and delivers new value (advanced stats) → people pay.
-*   API-first means customers slot you behind the curtain; switching cost grows every integration they bolt on.
-*   Multi-segment: if coaches are cheap this season, media editors or betting models keep your GPUs busy.
-
 ## Project Goal
 
 To build a computer-vision pipeline that converts raw basketball video into event-level JSON and embeddable shot charts. Target metrics include:
@@ -33,3 +28,12 @@ This project aims to onboard beta customers and generate MRR, demonstrating a ma
 *   **Serving**: FastAPI + Uvicorn + Redis queue
 *   **Storage**: TimescaleDB (PostGIS for spatial queries)
 *   **Auth & Billing**: Stripe (metered usage)
+
+## Progress Report (WIP)
+
+### Week 1
+* Found 7 full-length NBA game videos (2016 NBA finals) for labeling
+  * Processed videos using Handbrake for compression
+  * Trimmed videos to strict-play (timeouts ... removed)
+* Currently setting up LabelStudio to label events in game videos
+
