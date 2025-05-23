@@ -34,6 +34,6 @@ This project aims to onboard beta customers and generate MRR, demonstrating a ma
 ### Week 1
 * Found 7 full-length NBA game videos (2016 NBA finals) for labeling
   * Processed videos using Handbrake for compression
-  * Trimmed videos to strict-play (timeouts ... removed)
+  * Split 2-hour game vids into 10 minute chunks
 * Currently setting up LabelStudio to label events in game videos
 
