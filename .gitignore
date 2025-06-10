@@ -3,7 +3,4 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 
-# directory for game videos
-game-vids/
-
 .DS_Store
