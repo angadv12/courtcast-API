@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['- collaborate with your team on computer vision projects', '------------------------------', 'Basket recognition - v6 2023-06-05 1-01pm', 'Roboflow is an end-to-end computer vision platform that helps you']
+
+roboflow:
+  workspace: angadv12
+  project: courtcast
+  version: 1
+  license: MIT
+  url: https://universe.roboflow.com/angadv12/courtcast/dataset/1
