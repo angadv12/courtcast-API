@@ -8,10 +8,10 @@ Coaches, trainers, media editors, gambling startups, and even rec-league apps al
 
 ## Project Goal
 
-To build a computer-vision pipeline that converts raw basketball video into event-level JSON and embeddable shot charts. Target metrics include:
-*   93% shot-detection F1
-*   14 cm median location error
-*   Processing 60 games/hour on a single RTX 3070-Ti
+To build a computer-vision pipeline that converts raw basketball video into event-level JSON and embeddable shot charts.
+
+Target metrics include:
+*   90% mAP50, 90% Precision, 90% Recall
 
 This project aims to simulate beta customers, demonstrating a marketable product.
 
@@ -23,7 +23,7 @@ This project aims to simulate beta customers, demonstrating a marketable product
 *   **One-liner Widget**: Embeddable JavaScript widget for heat-maps/shot charts.
 
 ## Tech Stack Overview
-*   **Detection/Tracking**: YOLOv11 + DeepSORT
+*   **Detection/Tracking**: YOLOv11
 *   **Event Classifier**: 1D Temporal CNN
 *   **Homography**: RANSAC on key court lines
 *   **Serving**: FastAPI + Uvicorn + Redis queue
@@ -32,6 +32,11 @@ This project aims to simulate beta customers, demonstrating a marketable product
 
 ## Progress Report (WIP)
 ### Week 1
-* Setting up YOLOv11 for processing pre-labeled images of NBA in-game frames
+* Set up YOLOv11 for processing pre-labeled images of NBA in-game frames
     * Used for player/ball tracking
     * Images dataset from [Roboflow](https://universe.roboflow.com/technion-ui0ov/basket-recognition-9ztqo/dataset/6) by Technion.
+* Fine-tuned YOLOv11-Small model for basketball player/ball/basket/referee tracking
+   * Trained in 50 epochs, 1280px resolution, with augmentation: degrees=5, translate=0.1, mosaic=0.5
+   * All training done on singular RTX 3070-Ti running CUDA=12.1, training done in 26m for 50 epochs using batch=4
+* Achieved all target metrics:
+   * 98.4% mAP50, 97.9% Precision, 96.7% Recall
