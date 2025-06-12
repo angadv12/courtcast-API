@@ -3,7 +3,7 @@ val: ../valid/images
 test: ../test/images
 
 nc: 4
-names: ['- collaborate with your team on computer vision projects', '------------------------------', 'Basket recognition - v6 2023-06-05 1-01pm', 'Roboflow is an end-to-end computer vision platform that helps you']
+names: ['referee', 'basket', 'ball', 'player']
 
 roboflow:
   workspace: angadv12
