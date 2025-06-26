@@ -8,3 +8,6 @@ __pycache__/
 notebooks/courtcast-1/
 
 basketball_tracking/
+
+Pipfile
+Pipfile.lock

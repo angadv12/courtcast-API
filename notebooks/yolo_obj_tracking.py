@@ -7,7 +7,7 @@ if __name__ == "__main__":
     os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
     os.environ['PYTHONUNBUFFERED'] = '1'
 
-    # Get GPU information
+    # get gpu information
     try:
         result = subprocess.run(['nvidia-smi'], capture_output=True, text=True, check=True)
         print(result.stdout)
@@ -22,11 +22,9 @@ if __name__ == "__main__":
     import ultralytics
     print(ultralytics.checks())
     from ultralytics import YOLO
-    from PIL import Image
-    import requests
-
     from dotenv import load_dotenv
     from roboflow import Roboflow
+
     load_dotenv()
     ROBOFLOW_API_KEY = os.getenv("ROBOFLOW_API_KEY")
     rf = Roboflow(api_key=ROBOFLOW_API_KEY)
