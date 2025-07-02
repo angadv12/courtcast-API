@@ -1,0 +1,19 @@
+{
+  "name": "courtcast-api",
+  "version": "1.0.0",
+  "description": "CourtCast API turns any basketball video into structured, query-ready stats & visualizations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angadv12/courtcast-API.git"
+  },
+  "author": "Angad Brar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angadv12/courtcast-API/issues"
+  },
+  "homepage": "https://github.com/angadv12/courtcast-API#readme"
+}

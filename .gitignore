@@ -6,8 +6,12 @@ __pycache__/
 .DS_Store
 
 notebooks/courtcast-1/
+notebooks/runs/detect/train/weights/
 
 basketball_tracking/
 
-Pipfile
-Pipfile.lock
+node_modules/
+
+.cursor/
+
+*.pt
