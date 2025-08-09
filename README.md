@@ -1,6 +1,6 @@
 # CourtCast API
 
-CourtCast API turns any basketball video into structured, query-ready stats & visualizations.
+CourtCast API turns broadcast basketball footage into structured, query-ready stats & visualizationss.
 
 ## Why CourtCast API?
 
